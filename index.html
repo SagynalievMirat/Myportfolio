@@ -2,59 +2,131 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Моя страница</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX & Web Designer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Обо мне</h1>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">DESIGN SPACE</div>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#works">Works</a>
+                <a href="#skills">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-    <!-- Картинка -->
-    <img src="rop" alt="Моя фотография" width="200">
+    <!-- Главный блок -->
+    <section class="hero container">
+        <div class="hero-badge">👋 Hi! There, I'm Sathya.</div>
+        <h1>UI UX Designer & Web Designer</h1>
+        <p>I Design Beautifully Simple Things And I Love What I Do. Just Simple Like That!</p>
+        <a href="#works" class="btn">Let's talk</a>
+    </section>
 
-    <h2>Мои навыки</h2>
+    <!-- О себе -->
+    <section id="about" class="about">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h2>About me</h2>
+                <p>Hello! I'm Sathya Narayanan, a passionate and creative UI/UX designer ready to embark on a journey of shaping exceptional digital experiences...</p>
+                <p>I have honed my skills in user research, wireframing, prototyping, and visual design...</p>
+                <a href="#contact" class="btn">Let's talk</a>
+            </div>
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Designer">
+            </div>
+        </div>
+    </section>
 
-    <!-- Список навыков -->
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Работа с компьютером</li>
-        <li>Работа в команде</li>
-    </ul>
+    <!-- Избранные работы -->
+    <section id="works" class="works container">
+        <h2>Selected works</h2>
+        <div class="works-grid">
+            <div class="work-card">
+                <div class="work-img"></div>
+                <div class="work-info">
+                    <div class="work-tags">
+                        <span class="tag">UI/UX</span>
+                        <span class="tag">Mobile App</span>
+                    </div>
+                    <div class="work-title">HEBE - Mobile App Design</div>
+                </div>
+            </div>
+            <div class="work-card">
+                <div class="work-img"></div>
+                <div class="work-info">
+                    <div class="work-tags">
+                        <span class="tag">Web</span>
+                    </div>
+                    <div class="work-title">Travel Agency Website Design</div>
+                </div>
+            </div>
+            <div class="work-card">
+                <div class="work-img"></div>
+                <div class="work-info">
+                    <div class="work-tags">
+                        <span class="tag">Graphic</span>
+                    </div>
+                    <div class="work-title">Social Media Poster</div>
+                </div>
+            </div>
+            <div class="work-card">
+                <div class="work-img"></div>
+                <div class="work-info">
+                    <div class="work-tags">
+                        <span class="tag">UI/UX</span>
+                    </div>
+                    <div class="work-title">Shoppy Bag - E-commerce App</div>
+                </div>
+            </div>
+        </div>
+        <div class="center-btn">
+            <a href="#" class="btn">View All Works</a>
+        </div>
+    </section>
 
-    <h2>Мои данные</h2>
+    <!-- Специализация и навыки -->
+    <section id="skills" class="skills">
+        <div class="container skills-grid">
+            <div>
+                <p style="color: #888; text-transform: uppercase; font-size: 0.9rem; margin-bottom: 10px;">What I Do!</p>
+                <h2>My Specialization And Key Skills</h2>
+            </div>
+            <div class="skills-visual">
+                <span>[ Иконки программ: Figma, Ps, Ai и др. ]</span>
+            </div>
+        </div>
+    </section>
 
-    <!-- Таблица -->
-    <table border="1">
-        <tr>
-            <th>Навык</th>
-            <th>Уровень</th>
-        </tr>
-        <tr>
-            <td>HTML</td>
-            <td>Хороший</td>
-        </tr>
-        <tr>
-            <td>CSS</td>
-            <td>Средний</td>
-        </tr>
-        <tr>
-            <td>JavaScript</td>
-            <td>Начальный</td>
-        </tr>
-    </table>
+    <!-- Контакты -->
+    <section id="contact" class="contact container">
+        <p style="color: #888; margin-bottom: 10px;">Contact</p>
+        <h2>Let’s rock with me</h2>
+        <div class="contact-info">
+            <span>📞 +123 456 78 93</span>
+            <span>✉️ contact.sathya@gmail.com</span>
+        </div>
+    </section>
 
-    <h2>Мои цели</h2>
-
-    <!-- Нумерованный список -->
-    <ol>
-        <li>Научиться создавать сайты</li>
-        <li>Изучить CSS</li>
-        <li>Изучить JavaScript</li>
-    </ol>
-<footer>
-    <p>© 2026 Моя страница</p>
-    <p>Мои контакты: example@mail.com</p>
-</footer>
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="logo" style="margin-bottom: 20px; color: #fff;">DESIGN SPACE</div>
+            <ul class="footer-nav">
+                <li><a href="#about">Work</a></li>
+                <li><a href="#about">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <p>© DESIGN SPACE. All Rights Reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
