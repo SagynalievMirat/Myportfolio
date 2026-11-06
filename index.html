@@ -1,132 +1,191 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UI/UX & Web Designer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sathya Narayanan - Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Шапка сайта -->
-    <header>
-        <div class="container nav-container">
-            <div class="logo">DESIGN SPACE</div>
-            <nav class="nav-links">
-                <a href="#about">About</a>
-                <a href="#works">Works</a>
-                <a href="#skills">Services</a>
+    <!-- Градиентные свечения на фоне -->
+    <div class="glow-bg glow-1"></div>
+    <div class="glow-bg glow-2"></div>
+
+    <!-- 1. Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">SPACE</a>
+            <button class="burger" id="burger-btn" aria-label="Menu">☰</button>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#about">About me</a>
+                <a href="#works">Selected Works</a>
+                <a href="#skills">Skills</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
 
-    <!-- Главный блок -->
-    <section class="hero container">
-        <div class="hero-badge">👋 Hi! There, I'm Sathya.</div>
-        <h1>UI UX Designer & Web Designer</h1>
-        <p>I Design Beautifully Simple Things And I Love What I Do. Just Simple Like That!</p>
-        <a href="#works" class="btn">Let's talk</a>
-    </section>
+    <main>
+        <!-- 2. Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <p class="hero-subtitle">👋 Hi There, I'm Mirat,</p>
+                <h1 class="hero-title">
+                    UI UX DESIGNER <br>
+                    <span class="outline-text">& WEB DESIGNER</span>
+                </h1>
+                <p class="hero-desc">I Design Beautifully Simple Things. And I Love What I Do.<br>Just Simple-Like That!</p>
+                
+                <div class="hero-action-row">
+                    <a href="#contact" class="btn-black">Let's talk ↗</a>
+                </div>
 
-    <!-- О себе -->
-    <section id="about" class="about">
-        <div class="container about-grid">
-            <div class="about-text">
-                <h2>About me</h2>
-                <p>Hello! I'm Sathya Narayanan, a passionate and creative UI/UX designer ready to embark on a journey of shaping exceptional digital experiences...</p>
-                <p>I have honed my skills in user research, wireframing, prototyping, and visual design...</p>
-                <a href="#contact" class="btn">Let's talk</a>
-            </div>
-            <div class="about-img">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Designer">
-            </div>
-        </div>
-    </section>
-
-    <!-- Избранные работы -->
-    <section id="works" class="works container">
-        <h2>Selected works</h2>
-        <div class="works-grid">
-            <div class="work-card">
-                <div class="work-img"></div>
-                <div class="work-info">
-                    <div class="work-tags">
-                        <span class="tag">UI/UX</span>
-                        <span class="tag">Mobile App</span>
-                    </div>
-                    <div class="work-title">HEBE - Mobile App Design</div>
+                <div class="circle-badge">
+                    <svg viewBox="0 0 100 100" width="100" height="100">
+                        <path id="circlePath" fill="none" stroke="none" d="M 10, 50 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0"/>
+                        <text font-size="10" letter-spacing="2">
+                            <textPath href="#circlePath">
+                                MY PROJECTS • MY PROJECTS •
+                            </textPath>
+                        </text>
+                    </svg>
+                    <span class="arrow-down">↓</span>
                 </div>
             </div>
-            <div class="work-card">
-                <div class="work-img"></div>
-                <div class="work-info">
-                    <div class="work-tags">
-                        <span class="tag">Web</span>
+        </section>
+
+        <!-- 3. About Me -->
+        <section id="about" class="about">
+            <div class="container about-grid">
+                <div class="about-text">
+                    <h2>About me</h2>
+                    <p>Hello! I'm Mirat Sagynaliev, a passionate and creative UI/UX designer ready to embark on a journey of shaping exceptional digital experiences. With a fresh perspective and a keen eye for detail, I bring enthusiasm and dedication to every project I undertake.</p>
+                    <p>I have honed my skills in user research, wireframing, prototyping, and visual design. I am excited to apply my knowledge and creativity to solve complex design challenges and create intuitive and visually appealing interfaces.</p>
+                    <a href="#contact" class="btn-black">Let's talk ↗</a>
+                </div>
+                <div class="about-card">
+                    <div class="img-wrapper">
+                        <img src="images/avatar.jpg" alt="Sathya Narayanan">
                     </div>
-                    <div class="work-title">Travel Agency Website Design</div>
+                    <p class="caption">A multidisciplinary designer harnessing the power of design to drive win-win goals.</p>
                 </div>
             </div>
-            <div class="work-card">
-                <div class="work-img"></div>
-                <div class="work-info">
-                    <div class="work-tags">
-                        <span class="tag">Graphic</span>
+        </section>
+
+        <!-- 4. Selected Works -->
+        <section id="works" class="works">
+            <div class="container">
+                <h2>Selected works</h2>
+                <div class="works-grid">
+                    <!-- Card 1 -->
+                    <div class="work-card">
+                        <div class="card-media">
+                            <img src="images/work1.png.png" alt="HEED">
+                        </div>
+                        <div class="card-footer">
+                            <div>
+                                <h3>HEED</h3>
+                                <p>UI UX Case Study</p>
+                            </div>
+                            <button class="arrow-btn">→</button>
+                        </div>
                     </div>
-                    <div class="work-title">Social Media Poster</div>
+                    <!-- Card 2 -->
+                    <div class="work-card">
+                        <div class="card-media">
+                            <img src="images/work2.png.png" alt="Flymee">
+                        </div>
+                        <div class="card-footer">
+                            <div>
+                                <h3>Fly way</h3>
+                                <p>Travel Agency Website Design</p>
+                            </div>
+                            <button class="arrow-btn">→</button>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="work-card">
+                        <div class="card-media">
+                            <img src="images/work3.png.png" alt="Food Restaurant">
+                        </div>
+                        <div class="card-footer">
+                            <div>
+                                <h3>Sushi Restaurant</h3>
+                                <p>Social Media Poster Design</p>
+                            </div>
+                            <button class="arrow-btn">→</button>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="work-card">
+                        <div class="card-media">
+                            <img src="images/work4.png.png" alt="Shoppy Boy">
+                        </div>
+                        <div class="card-footer">
+                            <div>
+                                <h3>Shoppy Bag</h3>
+                                <p>Mobile App Design</p>
+                            </div>
+                            <button class="arrow-btn">→</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="center-box">
+                    <button class="btn-black btn-wide">View All Works ▾</button>
                 </div>
             </div>
-            <div class="work-card">
-                <div class="work-img"></div>
-                <div class="work-info">
-                    <div class="work-tags">
-                        <span class="tag">UI/UX</span>
-                    </div>
-                    <div class="work-title">Shoppy Bag - E-commerce App</div>
+        </section>
+
+        <!-- 5. Skills (Dark Section) -->
+        <section id="skills" class="skills-dark">
+            <div class="container skills-grid">
+                <div class="skills-info">
+                    <span class="subtext">What I Do !</span>
+                    <h2>My Specialization<br><span class="gray-text">And Key Skills</span></h2>
+                </div>
+                <div class="skills-visual">
+                    <!-- Изображение сотового шаблона софт-иконками (Figma/Ps/Ai) из макета -->
+                    <img src="images/Hexagons.png" alt="Skills Hexagons">
                 </div>
             </div>
-        </div>
-        <div class="center-btn">
-            <a href="#" class="btn">View All Works</a>
-        </div>
-    </section>
+        </section>
 
-    <!-- Специализация и навыки -->
-    <section id="skills" class="skills">
-        <div class="container skills-grid">
-            <div>
-                <p style="color: #888; text-transform: uppercase; font-size: 0.9rem; margin-bottom: 10px;">What I Do!</p>
-                <h2>My Specialization And Key Skills</h2>
+        <!-- 6. Contact -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <span class="subtext">Contact</span>
+                <h2>Let's rock <span class="gray-text">with me</span></h2>
+                <div class="contact-links">
+                    <a href="tel:+919790364731">+996 708 415 848</a>
+                    <a href="mailto:sathyanarayan2204@gmail.com">superotrichkaa@gmail.com</a>
+                </div>
             </div>
-            <div class="skills-visual">
-                <span>[ Иконки программ: Figma, Ps, Ai и др. ]</span>
+        </section>
+    </main>
+
+    <!-- 7. Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#" class="logo light">SPACE</a>
+            <div class="footer-nav">
+                <a href="#home">Home</a>
+                <a href="#about">About me</a>
+                <a href="#works">Work</a>
+                <a href="#skills">Skills</a>
             </div>
-        </div>
-    </section>
-
-    <!-- Контакты -->
-    <section id="contact" class="contact container">
-        <p style="color: #888; margin-bottom: 10px;">Contact</p>
-        <h2>Let’s rock with me</h2>
-        <div class="contact-info">
-            <span>📞 +123 456 78 93</span>
-            <span>✉️ contact.sathya@gmail.com</span>
-        </div>
-    </section>
-
-    <!-- Подвал -->
-    <footer>
-        <div class="container">
-            <div class="logo" style="margin-bottom: 20px; color: #fff;">DESIGN SPACE</div>
-            <ul class="footer-nav">
-                <li><a href="#about">Work</a></li>
-                <li><a href="#about">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <p>© DESIGN SPACE. All Rights Reserved.</p>
+            <p class="copyright">© 2026 SPACE. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
